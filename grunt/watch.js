@@ -27,6 +27,10 @@ module.exports = {
         files: 'bower_components/**',
         tasks: ['uglify']
     },
+    mustache: {
+        files: ['templates/**', 'json/*.json'],
+        tasks: ['mustache_render']
+    },
     bower: {
         files: 'bower.json',
         tasks: ['shell:bower_update'],

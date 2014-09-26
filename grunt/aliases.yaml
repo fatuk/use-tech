@@ -1,6 +1,8 @@
 default:
   - 'less'
+  - 'autoprefixer'
   - 'uglify'
+  - 'mustache_render'
   - 'shell:bower_update'
   - 'connect'
   - 'watch'

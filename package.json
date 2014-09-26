@@ -20,6 +20,7 @@
     "grunt-notify": "^0.2.20",
     "grunt-shell": "^0.7.0",
     "load-grunt-config": "^0.8.0",
+    "grunt-mustache-render": "^1.6.0",
     "time-grunt": "^0.3.1"
   }
 }
