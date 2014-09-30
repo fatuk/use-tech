@@ -3,6 +3,10 @@ default:
   - 'autoprefixer'
   - 'uglify'
   - 'mustache_render'
-  - 'shell:bower_update'
+  - 'svg'
   - 'connect'
   - 'watch'
+svg:
+  - 'svgmin'
+  - 'svgstore'
+  - 'replace'
