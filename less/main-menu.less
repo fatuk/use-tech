@@ -1,11 +1,14 @@
 .main-menu {
 	background: url('../img/head_03.png') no-repeat;
-	min-width: 686px;
+	background-size: cover;
+	width: 620px;
 	height: 138px;
 	float: left;
 	position: relative;
-	margin-left: 100px;
+	margin-left: 130px;
+	transform: skewX(-25deg);
 	&__list {
+		transform: skewX(25deg);
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -13,7 +16,7 @@
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		left: 50px;
+		left: 20px;
 		margin-top: -(35px / 2);
 	}
 	&__item {

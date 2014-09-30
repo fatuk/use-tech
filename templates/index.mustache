@@ -17,9 +17,20 @@
         <!-- Site header -->
         {{>header}}
         <!-- Slider -->
-        <div class="slider">slider</div>
+        <div class="row row_grey">
+            <div class="slider">slider</div>
+        </div>
         <!-- Main content -->
-        <main class="content"></main>
+        <main class="content">
+            <div class="row row_grey">
+                <div class="col-md-9">
+                    {{>about}}
+                </div>
+                <div class="col-md-3">
+                    {{>events}}
+                </div>
+            </div>
+        </main>
         <!-- Site footer -->
         {{>footer}}
     </div>
