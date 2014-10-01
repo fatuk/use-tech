@@ -1,3 +1,6 @@
 $(function() {
-	$('.slider').fractionSlider();
+	$('.slider').fractionSlider({
+		timeout: 100000,
+		pager: true
+	});
 });
