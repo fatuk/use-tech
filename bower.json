@@ -16,6 +16,7 @@
   "dependencies": {
     "jquery": "1.11.1",
     "3l": "~1.4.4",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "fractionslider": "~0.9.103"
   }
 }
