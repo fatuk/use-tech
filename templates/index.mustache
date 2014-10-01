@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>UseTech - Главная</title>
     <link rel="stylesheet" href="css/fractionslider/fractionslider.css">
+    <link rel="stylesheet" href="css/jquery.openCarousel.css">
     <link rel="stylesheet" href="css/main.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -35,8 +36,10 @@
                 </div>
             </div>
             <!-- Clients slider -->
-            <div class="slider slider_clients">
-                clients slider
+            <div class="row">
+                <div class="col-md-12">
+                    {{>clients-slider}}
+                </div>
             </div>
         </main>
         <!-- Site footer -->
