@@ -1,6 +1,7 @@
 $(function() {
 	$('.slider').fractionSlider({
-		timeout: 100000,
-		pager: true
+		timeout: 2000,
+		pager: true,
+		responsive: false
 	});
 });
