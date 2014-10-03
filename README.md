@@ -9,4 +9,4 @@ How to setup project:
 4. install bower dependecies (bower install)
 5. install npm dependecies (npm i)
 6. Run in project folder grunt (grunt)
-7. Open in browser http://localhost:80000/
+7. Open in browser http://localhost:8000/
