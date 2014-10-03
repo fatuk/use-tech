@@ -1,4 +1,169 @@
-@media (max-width: 1199px) {
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+	.logo {
+		width: 153px;
+		height: 37px;
+		background: url('../img/ut_sm.png') no-repeat;
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+	.site-header {
+		height: 60px;
+		>div {
+			padding: 0;
+		}
+	}
+	.site-footer__menu {
+		display: none;
+	}
+	.site-footer__info-address {
+		display: none;
+	}
+	.main-menu {
+		position: absolute;
+		width: 300px;
+		height: inherit;
+		padding: 0;
+		top: 60px;
+		right: 0;
+		left: inherit;
+		background: #fff;
+		transform: none;
+		box-shadow: 0 0 6px rgba(0,0,0,0.2);
+		padding: 15px;
+		z-index: 10;
+	}
+	.main-menu__list {
+		transform: none;
+		position: static;
+		display: initial;
+		.clearfix();
+		z-index: 10;
+	}
+	.main-menu__item {
+		clear: both;
+		transform: none;
+		display: inline-block;
+		float: left;
+		z-index: 10;
+	}
+	.main-menu__link {
+		transform: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.logo {
+		width: 153px;
+		height: 37px;
+		background: url('../img/ut_sm.png') no-repeat;
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+	.site-header {
+		height: 60px;
+		>div {
+			padding: 0;
+		}
+	}
+	.main-menu {
+		position: absolute;
+		width: 300px;
+		height: inherit;
+		padding: 0;
+		top: 60px;
+		right: 0;
+		left: inherit;
+		background: #fff;
+		transform: none;
+		box-shadow: 0 0 6px rgba(0,0,0,0.2);
+		padding: 15px;
+		z-index: 10;
+	}
+	.main-menu__list {
+		transform: none;
+		position: static;
+		display: initial;
+		.clearfix();
+		z-index: 10;
+	}
+	.main-menu__item {
+		clear: both;
+		transform: none;
+		display: inline-block;
+		float: left;
+		z-index: 10;
+	}
+	.main-menu__link {
+		transform: none;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+.hide-xs {
+  @media (max-width: @screen-xs-max) {
+    display: none;
+  }
+}
+.hide-sm {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    display: none;
+  }
+}
+.hide-md {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    display: none;
+  }
+}
+.hide-lg {
+  @media (min-width: @screen-lg-min) {
+    display: none;
+  }
+}
+
+
+/* @media (max-width: 1199px) {
 	.logo {
 		width: 153px;
 		height: 37px;
@@ -64,4 +229,4 @@
 	.main-menu__item {
 		clear: none;
 	}
-}
+} */

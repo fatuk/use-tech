@@ -43,3 +43,27 @@
 		}
 	}
 }
+
+.menu-btn {
+	display: inline-block;
+	position: absolute;
+	width: 46px;
+	height: 36px;
+	top: 11px;
+	right: 15px;
+	background: #272727;
+	border-radius: 5px;
+	border: solid 1px #363636;
+	cursor: pointer;
+	&:hover {
+		.icon {
+			fill: #9CBE14;
+		}
+	}
+	&:active {
+		.icon {
+			transition: none;
+			fill: darken(#9CBE14, 10%);
+		}
+	}
+}
